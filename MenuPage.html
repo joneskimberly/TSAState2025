@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+<div class="topnav">
+  
+  <a href="index.html">Home</a>
+  <a class="active" href="#Menu">Menu</a>
+  <a href="OrderPage.html">Order</a>
+  <a href="AboutUsPage.html">About Us</a>
+  <a href="Contact.html">Contact</a>
+<div class="dropdown">
+    <button class="dropbtn">More
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="SourcesPage.html">Sources</a>
+      <a href="CopyrightchecklistPage.html">Copyright</a>
+    </div>
+  </div>
+
+</div>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+/* Add a black background color to the top navigation */
+.topnav {
+  background-color:#855458;
+  overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  color:white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #a8a85f;
+  color: black;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color: #c98986;
+  color: white;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+/* Dropdown button */
+.dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit; /* Important for vertical align on mobile phones */
+  margin: 0; /* Important for vertical align on mobile phones */
+}
+
+/* Add a background color to navbar links on hover */
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: #a8a85f;
+  Color:black
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #a8a85f;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+/* Add a grey background color to dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #a8a85f;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+Img{
+Display:block;
+Margin-left:auto;
+Margin-right:auto;
+}
+h1{ 
+Color:#c98986;
+Font-family: didot;
+Text-align: center;
+}
+h2{ 
+Color:#c98986;
+Font-family:didot;
+Text-align: center;
+}
+P{
+Color:#a8a85f;
+Font-family:didot;
+Text-align: center;
+}
+Body{
+Background-color:white;
+}
+Img{
+Display:block;
+Margin-left:auto;
+Margin-right:auto;
+}
+Form{
+Text-align: center;
+}
+.slider-wrapper{
+	position: relative;
+	max-width: 48rem;
+	margin: 0 auto;
+}
+.slider{
+	display:flex;
+	aspect-ratio: 16/9;
+	overflow-x: auto;
+	scroll-snap-type: x mandatory;
+	scroll-behavior: smooth;
+	box-shadow: 0 1.5rem 3 rem -0.75rem hsla(0, 0%, 0%, 0.25);
+	border-radius: 0.5rem;
+}
+.slider img{
+	flex: 1 0 100%;
+	scroll-snap-align: start;
+	object-fit: cover;
+}
+.slider-nav {
+	display: flex;
+	column-gap: 1rem;
+	position: absolute;
+	bottom: 1.25rem;
+	left: 50%;
+	transform: translateX(-50%);
+	z-index: 1;
+}
+.slider-nav a {
+	width: 0.5rem;
+	height: 0.5rem;
+	border-radius: 50%;
+	background-color: #fff;
+	opacity: 0.75;
+	transition: opacity easy 250ms;
+}
+.slider-nav a:hover {
+	opacity: 1;
+}
+
+</style>
+
+</head>
+<body>
+<title>Honeysuckle Harvest</title>
+<h1>Our Menu</h1>
+<p>Our menu features some of the best vegan and vegetarian meals for breakfast, lunch, and dinner. </p> 
+
+<section class="container">
+	<div class="slider-wrapper">
+		<div class="slider">
+			<img id="slide-1" src="Pumpkinsoup.jpeg" alt="Pumpkin Soup">
+			<img id="slide-2" src="Avocado toast.jpeg" alt="Avocado Toast">
+                        <img id="slide-3" src="chia seed pudding.jpeg" alt="Chia Seed Pudding">
+                        <img id="slide-4" src="Sorbet.jpeg" alt="Sorbet">
+		</div>
+		<div class="slider-nav">
+			<a href="#slide-1"></a>
+			<a href="#slide-2"></a>
+                        <a href="#slide-3"></a>
+                        <a href="#slide-4"></a>
+		</div>
+	</div>
+</section><br>
+<img src="Retro Modern Food Menu.jpeg" alt="Food Menu" width="850" height="1100"><br>
+
+</body>
+
+</html>
